@@ -1,0 +1,20 @@
+#+title: <Document Title>
+#+author: <Author Name>
+#+date: <YYYY-MM-DD>
+#+property: version 0.1
+#+property: approver <Approver Name>
+#+property: status Draft
+* Introduction
+Mục đích tài liệu này là ...
+* System Overview
+Mô tả hệ thống...
+* Code Example
+#+begin_src go
+  package main
+
+  import "fmt"
+
+  func main() {
+      fmt.Println("Hello, word")
+  }
+#+end_src

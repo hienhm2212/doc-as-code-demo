@@ -1,0 +1,28 @@
+site_name: "Demo Docs"
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Design:
+      - System Architecture: design/system-arch.md
+      - Template: template.md
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - toc.integrate
+    - content.code.copy
+    - search.suggest
+
+  markdown_extensions:
+    - admonition
+    - codehilite
+    - toc:
+        permalink: true
+    - tables
+
+plugins:
+  - search
+  - with-pdf:
+      output_path: pdf/demo-docs.pdf

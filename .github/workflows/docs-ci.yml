@@ -1,0 +1,35 @@
+name: Build and Publish Docs
+
+on:
+  push:
+    branches:
+      - main
+    release:
+      types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install MkDocs + PDF plugin
+        run: |
+          pip install mkdocs-material mkdocs-with-pdf
+
+      - name: Build HTML docs
+        run: mkdocs build --clean
+
+      - name: Export PDF
+        run: mkdocs build --clean --with-pdf
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs-output
+          path: site
