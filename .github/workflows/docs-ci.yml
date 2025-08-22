@@ -20,7 +20,8 @@ jobs:
 
       - name: Install MkDocs + PDF plugin
         run: |
-          pip install mkdocs-material mkdocs-with-pdf
+          pip install mkdocs-material
+          pip install mkdocs-with-pdf
 
       - name: Build HTML docs
         run: mkdocs build --clean
