@@ -24,11 +24,8 @@ jobs:
           pip install mkdocs-material
           pip install mkdocs-with-pdf
 
-      - name: Build MkDocs site
+      - name: Build MkDocs site (with PDF)
         run: mkdocs build --clean
-
-      - name: Build PDF
-        run: mkdocs build --clean --site-dir site --pdf-export
 
       - name: Upload built site
         uses: actions/upload-artifact@v4
