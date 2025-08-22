@@ -26,9 +26,6 @@ jobs:
       - name: Build HTML docs
         run: mkdocs build --clean
 
-      - name: Export PDF
-        run: mkdocs build --clean --with-pdf
-
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
