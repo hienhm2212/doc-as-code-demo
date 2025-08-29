@@ -6,7 +6,7 @@ nav:
   - Design:
       - System Architecture: design/system-arch.md
       - Template: template.md
-  - PDF Workflow: pdf-workflow.md
+  # - PDF Workflow: pdf-workflow.md
 
 # Show all headers in navigation
 # docs_dir: docs
@@ -64,5 +64,5 @@ markdown_extensions:
 
 plugins:
   - search
-  - pdf-export:
-      output_path: pdfs
+  # - pdf-export:
+  #     output_path: pdfs

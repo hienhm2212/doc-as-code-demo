@@ -25,7 +25,7 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material
-      - run: pip install mkdocs-pdf-export-plugin
+      # - run: pip install mkdocs-pdf-export-plugin
       - run: mkdocs build
-      - run: find site -name "*.pdf" -delete
+      # - run: find site -name "*.pdf" -delete
       - run: mkdocs gh-deploy --force
