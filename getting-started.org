@@ -1,0 +1,20 @@
+#+TITLE: Getting Started
+#+AUTHOR: HienHM
+#+OPTIONS: toc:nil
+* Getting Started
+This is document demo write by *Markdown*.
+** Example Code
+#+begin_src ruby
+  def hello
+    puts "Hello Doc as code"
+  end
+#+end_src
+** List
+- Service A
+- Service B
+** Table
+| Method | Description     |
+|--------+-----------------|
+| GET    | Fetch resource  |
+| PUT    | Update resource |
+| DELETE | Delete resource |

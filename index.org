@@ -1,0 +1,156 @@
+#+title: Welcome to Demo Docs
+#+author: HienHM
+#+date: <2025-08-25 Mon>
+#+OPTIONS: toc:nil
+
+* Welcome
+This is a demonstration of a docs-as-code workflow using MkDocs and Org-mode.
+
+** What is Docs-as-Code?
+Docs-as-code is a documentation methodology that treats documentation like source code. This approach brings several benefits:
+
+- Version control for documentation
+- Code review processes for docs
+- Automated builds and deployments
+- Consistent formatting and styling
+- Integration with development workflows
+
+** Project Overview
+This demo showcases how to set up a documentation site using:
+- Org-mode for content authoring
+- MkDocs for site generation
+- Material theme for styling
+- Git for version control
+
+* Workflow
+The docs-as-code workflow follows these steps:
+
+** 1. Content Creation
+- Write documentation in Org-mode format
+- Use structured headers and formatting
+- Include code examples and diagrams
+- Add metadata and frontmatter
+
+** 2. Configuration
+- Configure MkDocs with =mkdocs.yml=
+- Set up theme and plugins
+- Define navigation structure
+- Configure build settings
+
+** 3. Build Process
+#+begin_src bash
+mkdocs build
+#+end_src
+
+This command:
+- Processes Org-mode files
+- Generates HTML, CSS, and JavaScript
+- Creates the =site/= directory
+- Applies theme styling
+
+** 4. Deployment
+- Commit changes to version control
+- Push to repository
+- Deploy to hosting platform (GitHub Pages, Netlify, etc.)
+
+* Features
+
+** Multi-format Support
+This setup supports multiple input formats:
+- Org-mode (primary)
+- Markdown (alternative)
+- ReStructuredText (if configured)
+
+** Theme Customization
+The site uses the Material theme with:
+- Responsive design
+- Dark/light mode toggle
+- Search functionality
+- Navigation sidebar
+- Custom CSS support
+
+** Version Control Integration
+- Git-based workflow
+- Branch-based development
+- Pull request reviews
+- Automated testing
+
+* Getting Started
+
+** Prerequisites
+- Python 3.7+
+- pip package manager
+- Git for version control
+
+** Installation
+#+begin_src bash
+pip install mkdocs mkdocs-material
+#+end_src
+
+** Quick Start
+1. Clone the repository
+2. Install dependencies
+3. Edit documentation in =docs/=
+4. Run =mkdocs serve= for local preview
+5. Run =mkdocs build= for production build
+
+* Project Structure
+#+begin_src
+docs-as-code-demo/
+├── docs/
+│   ├── index.org          # Main documentation
+│   ├── getting-started.org # Getting started guide
+│   ├── design/
+│   │   └── system-arch.org # System architecture
+│   └── stylesheets/        # Custom CSS
+├── mkdocs.yml             # MkDocs configuration
+└── site/                  # Generated site (after build)
+#+end_src
+
+* Best Practices
+
+** Documentation Standards
+- Use clear, concise language
+- Include code examples
+- Add diagrams when helpful
+- Keep content up-to-date
+- Review and test regularly
+
+** Org-mode Tips
+- Use consistent header levels
+- Add metadata blocks
+- Include source code blocks
+- Use tables for structured data
+- Add links to related content
+
+** Workflow Tips
+- Commit frequently
+- Use descriptive commit messages
+- Review changes before merging
+- Test builds locally
+- Monitor deployment status
+
+* Contributing
+
+** How to Contribute
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test the build locally
+5. Submit a pull request
+
+** Code of Conduct
+- Be respectful and inclusive
+- Provide constructive feedback
+- Follow established conventions
+- Help improve documentation
+
+* License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+* Support
+For questions or issues:
+- Check the documentation
+- Search existing issues
+- Create a new issue
+- Contact the maintainers
