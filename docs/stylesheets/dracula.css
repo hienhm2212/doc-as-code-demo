@@ -1,0 +1,68 @@
+/* Dracula Theme Override for MkDocs Material */
+
+/* Base page background and text color */
+:root {
+  --md-default-bg-color: #282a36;
+  --md-default-fg-color: #f8f8f2;
+  --md-primary-fg-color: #bd93f9;
+  --md-accent-fg-color: #ff79c6;
+}
+
+/* Code block general appearance */
+.highlight, pre, code {
+  background-color: #44475a !important;
+  color: #f8f8f2 !important;
+}
+
+/* Material theme code blocks */
+.md-typeset pre > code {
+  background-color: #44475a !important;
+  color: #f8f8f2 !important;
+}
+
+/* Syntax highlight (Pygments classes) - Material theme compatible */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt { 
+  color: #ff79c6 !important; 
+}  /* keyword */
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .ss, .highlight .sx { 
+  color: #f1fa8c !important; 
+}  /* string */
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cp, .highlight .cs { 
+  color: #6272a4 !important; 
+  font-style: italic !important; 
+}  /* comment */
+.highlight .n, .highlight .na, .highlight .nb, .highlight .nc, .highlight .nd, .highlight .ne, .highlight .nf, .highlight .ni, .highlight .nl, .highlight .nn, .highlight .no, .highlight .nt, .highlight .nv { 
+  color: #8be9fd !important; 
+}  /* name/identifier */
+.highlight .o, .highlight .ow { 
+  color: #ffb86c !important; 
+}  /* operator */
+.highlight .mi, .highlight .mf, .highlight .mh, .highlight .il, .highlight .mo { 
+  color: #bd93f9 !important; 
+} /* number literal */
+.highlight .nf, .highlight .fm { 
+  color: #50fa7b !important; 
+} /* function name */
+.highlight .p { 
+  color: #f8f8f2 !important; 
+}  /* punctuation */
+
+/* Additional Material theme specific selectors */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt,
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .ss, .highlight .sx,
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cp, .highlight .cs,
+.highlight .n, .highlight .na, .highlight .nb, .highlight .nc, .highlight .nd, .highlight .ne, .highlight .nf, .highlight .ni, .highlight .nl, .highlight .nn, .highlight .no, .highlight .nt, .highlight .nv,
+.highlight .o, .highlight .ow,
+.highlight .mi, .highlight .mf, .highlight .mh, .highlight .il, .highlight .mo,
+.highlight .nf, .highlight .fm,
+.highlight .p {
+  font-weight: inherit !important;
+}
+
+/* Links adjustment */
+.md-typeset a {
+  color: #8be9fd;
+}
+.md-typeset a:hover {
+  color: #50fa7b;
+}

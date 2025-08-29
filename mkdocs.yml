@@ -1,10 +1,17 @@
 site_name: "Demo Docs"
-nav:
-  - Home: index.md
-  - Getting Started: getting-started.md
-  - Design:
-      - System Architecture: design/system-arch.md
-      - Template: template.md
+# Auto-generate navigation from file structure
+# nav:
+#   - Home: index.md
+#   - Getting Started: getting-started.md
+#   - Design:
+#       - System Architecture: design/system-arch.md
+#       - Template: template.md
+
+# Show all headers in navigation
+docs_dir: docs
+
+# Enable automatic navigation generation
+use_directory_urls: true
 
 theme:
   name: material
@@ -14,9 +21,28 @@ theme:
     - toc.integrate
     - content.code.copy
     - search.suggest
+    - navigation.expand
+    - navigation.sections
+    - navigation.tracking
+    - navigation.indexes
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  highlight:
+    theme: [default, slate]
 
-# extra_css:
-#   - stylesheets/dracula.css   # override màu Dracula
+extra_css:
+  - stylesheets/catppuccin.css   # Catppuccin Macchiato theme
 
 markdown_extensions:
   - admonition
@@ -36,3 +62,5 @@ markdown_extensions:
 
 plugins:
   - search
+
+

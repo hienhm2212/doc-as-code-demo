@@ -7,9 +7,30 @@ This is document demo write by **Markdown**.
 
 ## Example Code
 
-    def hello
-      puts "Hello Doc as code"
-    end
+```ruby
+def hello
+  puts "Hello Doc as code"
+end
+```
+
+```python
+def hello_world():
+    print("Hello, World!")
+    return "success"
+```
+
+```javascript
+function greet(name) {
+    console.log(`Hello, ${name}!`);
+    return "greeting sent";
+}
+```
+
+```bash
+#!/bin/bash
+echo "Hello from bash script"
+mkdir -p /tmp/test
+```
 
 
 ## List
