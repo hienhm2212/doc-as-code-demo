@@ -1,0 +1,7 @@
+# PDF Generation Requirements
+mkdocs-pdf-export-plugin>=1.0.0
+weasyprint>=60.0
+markdown>=3.4.0
+
+# System dependencies (Ubuntu/Debian)
+# sudo apt-get install pdftk-java

@@ -1,14 +1,15 @@
 site_name: "Demo Docs"
 # Auto-generate navigation from file structure
-# nav:
-#   - Home: index.md
-#   - Getting Started: getting-started.md
-#   - Design:
-#       - System Architecture: design/system-arch.md
-#       - Template: template.md
+nav:
+  - Welcome: index.md
+  - Getting Started: getting-started.md
+  - Design:
+      - System Architecture: design/system-arch.md
+      - Template: template.md
+  - PDF Workflow: pdf-workflow.md
 
 # Show all headers in navigation
-docs_dir: docs
+# docs_dir: docs
 
 # Enable automatic navigation generation
 use_directory_urls: true
@@ -43,6 +44,7 @@ theme:
 
 extra_css:
   - stylesheets/catppuccin.css   # Catppuccin Macchiato theme
+  - stylesheets/pdf.css          # PDF-specific styles
 
 markdown_extensions:
   - admonition
@@ -62,5 +64,6 @@ markdown_extensions:
 
 plugins:
   - search
+  - pdf-export
 
 
