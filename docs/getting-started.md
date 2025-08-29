@@ -1,20 +1,9 @@
 
-# Table of Contents
-
-1.  [Getting Started](#orgf5ad14c)
-    1.  [Example Code](#org48bd7c8)
-    2.  [List](#org66b8483)
-
-
-
-<a id="orgf5ad14c"></a>
 
 # Getting Started
 
 This is document demo write by **Markdown**.
 
-
-<a id="org48bd7c8"></a>
 
 ## Example Code
 
@@ -23,10 +12,43 @@ This is document demo write by **Markdown**.
     end
 
 
-<a id="org66b8483"></a>
-
 ## List
 
 -   Service A
 -   Service B
+
+
+## Table
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Method</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">GET</td>
+<td class="org-left">Fetch resource</td>
+</tr>
+
+<tr>
+<td class="org-left">PUT</td>
+<td class="org-left">Update resource</td>
+</tr>
+
+<tr>
+<td class="org-left">DELETE</td>
+<td class="org-left">Delete resource</td>
+</tr>
+</tbody>
+</table>
 

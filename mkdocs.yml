@@ -7,7 +7,7 @@ nav:
       - Template: template.md
 
 theme:
-  name: material
+  name: dracula
   features:
     - navigation.instant
     - navigation.tabs
@@ -15,14 +15,26 @@ theme:
     - content.code.copy
     - search.suggest
 
-  markdown_extensions:
-    - admonition
-    - codehilite
-    - toc:
-        permalink: true
-    - tables
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 plugins:
   - search
   - with-pdf:
       output_path: pdf/demo-docs.pdf
+      theme: null
+  - glightbox
