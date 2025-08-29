@@ -1,35 +1,45 @@
 
-# Table of Contents
+# Template Documentation
 
-1.  [Introduction](#orgdb02bc3)
-2.  [System Overview](#org358a01a)
-3.  [Code Example](#orgce8be40)
+This is a template file for creating new documentation pages.
 
+## Introduction
 
+This template provides a structure for creating new documentation pages in your docs-as-code project.
 
-<a id="orgdb02bc3"></a>
+## System Overview
 
-# Introduction
+Use this template to:
+- Create consistent documentation structure
+- Follow established formatting guidelines
+- Ensure proper navigation integration
 
-Mục đích tài liệu này là &#x2026;
+## Code Example
 
+Here's an example of how to include code blocks:
 
-<a id="org358a01a"></a>
+```go
+package main
 
-# System Overview
+import "fmt"
 
-Mô tả hệ thống&#x2026;
+func main() {
+    fmt.Println("Hello, World!")
+}
+```
 
+## Usage
 
-<a id="orgce8be40"></a>
+1. Copy this template file
+2. Rename it to your desired filename
+3. Update the content with your documentation
+4. Add it to the navigation in `mkdocs.yml`
 
-# Code Example
+## Best Practices
 
-    package main
-    
-    import "fmt"
-    
-    func main() {
-        fmt.Println("Hello, word")
-    }
+- Use clear, descriptive headings
+- Include code examples when relevant
+- Add links to related documentation
+- Keep content up-to-date
+- Review and test regularly
 

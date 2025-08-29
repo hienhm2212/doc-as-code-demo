@@ -6,7 +6,7 @@ nav:
   - Design:
       - System Architecture: design/system-arch.md
       - Template: template.md
-  # - PDF Workflow: pdf-workflow.md
+  - PDF Workflow: pdf-workflow.md
 
 # Show all headers in navigation
 # docs_dir: docs
@@ -44,7 +44,7 @@ theme:
 
 extra_css:
   - stylesheets/catppuccin.css   # Catppuccin Macchiato theme
-  - stylesheets/pdf.css          # PDF-specific styles
+  # - stylesheets/pdf.css          # PDF-specific styles (with web overrides)
 
 markdown_extensions:
   - admonition

@@ -33,19 +33,40 @@ body {
     padding: 0;
 }
 
-/* Remove problematic CSS that might cause layout issues */
-.md-header,
-.md-tabs,
-.md-nav,
-.md-sidebar,
-.md-footer,
-.md-search,
-.md-source,
-.md-version,
-.md-tabs__list,
-.md-tabs__item,
-.md-tabs__link {
-    display: none !important;
+/* PDF-specific styles - only apply when generating PDFs */
+@media print {
+    /* Remove problematic CSS that might cause layout issues */
+    .md-header,
+    .md-tabs,
+    .md-nav,
+    .md-sidebar,
+    .md-footer,
+    .md-search,
+    .md-source,
+    .md-version,
+    .md-tabs__list,
+    .md-tabs__item,
+    .md-tabs__link {
+        display: none !important;
+    }
+}
+
+/* Web-specific overrides to ensure navbar and header are visible */
+@media screen {
+    .md-header,
+    .md-tabs,
+    .md-nav,
+    .md-sidebar {
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    .md-tabs__list,
+    .md-tabs__item,
+    .md-tabs__link {
+        display: flex !important;
+        visibility: visible !important;
+    }
 }
 
 /* Ensure content is visible and properly formatted */
