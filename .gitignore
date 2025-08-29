@@ -4,6 +4,9 @@ site/
 # PDF generation output
 pdf/
 
+# Exclude PDF files from site directory
+site/**/*.pdf
+
 # Python cache
 __pycache__/
 *.pyc
