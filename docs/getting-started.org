@@ -1,4 +1,6 @@
 #+TITLE: Getting Started
+#+AUTHOR: HienHM
+#+OPTIONS: toc:nil
 * Getting Started
 This is document demo write by *Markdown*.
 ** Example Code
@@ -10,3 +12,9 @@ This is document demo write by *Markdown*.
 ** List
 - Service A
 - Service B
+** Table
+| Method | Description     |
+|--------+-----------------|
+| GET    | Fetch resource  |
+| PUT    | Update resource |
+| DELETE | Delete resource |

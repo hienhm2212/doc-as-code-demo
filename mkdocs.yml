@@ -7,7 +7,7 @@ nav:
       - Template: template.md
 
 theme:
-  name: dracula
+  name: material
   features:
     - navigation.instant
     - navigation.tabs
@@ -15,9 +15,11 @@ theme:
     - content.code.copy
     - search.suggest
 
+# extra_css:
+#   - stylesheets/dracula.css   # override màu Dracula
+
 markdown_extensions:
   - admonition
-  - codehilite
   - toc:
       permalink: true
   - tables
@@ -34,7 +36,3 @@ markdown_extensions:
 
 plugins:
   - search
-  - with-pdf:
-      output_path: pdf/demo-docs.pdf
-      theme: null
-  - glightbox
