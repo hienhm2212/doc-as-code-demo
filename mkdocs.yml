@@ -64,5 +64,5 @@ markdown_extensions:
 
 plugins:
   - search
-  - pdf-export
+  - pdf-export:
       output_path: pdfs
